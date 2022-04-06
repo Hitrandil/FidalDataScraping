@@ -42,7 +42,7 @@ Per ogni prestazione trovata tutta questa stringa viene passata alla funzione `i
 
 * Inserire nel crontab la seguente stringa:
 
-### Open Source [![Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](https://unlicense.org/)
+### Open Source [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 Il software è interamente open source. 
 
