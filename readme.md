@@ -42,11 +42,7 @@ Per ogni prestazione trovata tutta questa stringa viene passata alla funzione `i
 
 * Inserire nel crontab la seguente stringa:
 
-### Open Source [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-
-Il software è interamente open source. 
-
-### Compatibilità - [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
+### Compatibilità [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 
 Essendo scritto in python è compatibile ovunque questo venga installato. La guida per l'automatizzazione dello script è compatibile solamente con dispositivi Linux.
 
@@ -54,7 +50,7 @@ Essendo scritto in python è compatibile ovunque questo venga installato. La gui
 
 Mi puoi contattare su Telegram: <a href="https:t.me/hitrandil">@Hitrandil </a>
 
-### Credits
+### Credits  [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
 Il software è pensato e creato da <a href = "https://github.com/Hitrandil/">@hitrandil </a>.
 
