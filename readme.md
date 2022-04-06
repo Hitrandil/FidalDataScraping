@@ -1,5 +1,7 @@
 # Fidal Data Scraping
 
+ [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html) [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
 Il progetto nasce con l'intento di ricreare il database della Fidal lombardia popolato con tutti i dati già pubblici e consultabili in maniera libera sul sito <a href="https://fidal.it"> FIDAL Italia. </a>
 
 #### Il software è ancora in fase di sviluppo. 
@@ -42,7 +44,7 @@ Per ogni prestazione trovata tutta questa stringa viene passata alla funzione `i
 
 * Inserire nel crontab la seguente stringa:
 
-### Compatibilità [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
+### Compatibilità
 
 Essendo scritto in python è compatibile ovunque questo venga installato. La guida per l'automatizzazione dello script è compatibile solamente con dispositivi Linux.
 
@@ -50,10 +52,11 @@ Essendo scritto in python è compatibile ovunque questo venga installato. La gui
 
 Mi puoi contattare su Telegram: <a href="https:t.me/hitrandil">@Hitrandil </a>
 
-### Credits  [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+### Credits 
 
 Il software è pensato e creato da <a href = "https://github.com/Hitrandil/">@hitrandil </a>.
 
 <span style = "font-size: 10px;"> *i file contrassegnati con asterisco non sono ancora stati creati </span>
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
+
