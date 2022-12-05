@@ -27,12 +27,14 @@ def connect():
         conn = mysql.connector.connect(host=os.getenv("HOST"),
                                        database=os.getenv("NAME_DB"),
                                        user=os.getenv("USER_DB"),
-                                       password=os.getenv("PSW_DB"))
+                                       password=os.getenv("PSW_DB"),
+                                       auth_plugin='mysql_native_password')
         if conn.is_connected():
             print('Connected to MySQL database')
             return(conn)
 
     except Error as e:
+        print('Connection error');
         print(e)
     
 
@@ -107,7 +109,8 @@ def getDatiAtleta(urlAtleta):
 
 load_dotenv()
 conn = connect()
-getDatiAtleta("https://www.fidal.it/atleta/Paolo-Colombo/drKRkpWnaWs%3D")
+#getDatiAtleta("https://www.fidal.it/atleta/Paolo-Colombo/drKRkpWnaWs%3D")i
+getLinkAtleti("https://www.fidal.it/societa/POL--OLONIA/VA129")
 #*----------link utili----------------------------------
 #atleta senza data nascita: https://www.fidal.it/atleta/Paolo-Colombo/drKRkpWnaWs%3D
 #atleta con data nascita: https://www.fidal.it/atleta/Laura-Cortesi/drKRk5iobmw%3D
