@@ -39,18 +39,19 @@ def connect():
     
 
 def insert(datoGara):
-    mycursor = conn.cursor()
+    #mycursor = conn.cursor()
     if 'dataNascita' in datoGara:
         sql = "INSERT INTO prova (nome_cognome, data_nascita, data_prestazione, disciplina, prestazione, societa_prestazione) VALUES (%s, STR_TO_DATE(%s, '%d-%m-%Y'), STR_TO_DATE(%s, '%d/%m/%Y'), %s, %s, %s)"
         val = (datoGara['nomeCognome'], datoGara['dataNascita'], datoGara['data'], datoGara['disciplina'], datoGara['prestazione'], datoGara['societaPrestazione'])
     else:
         sql = "INSERT INTO prova (nome_cognome, data_prestazione, disciplina, prestazione, societa_prestazione) VALUES (%s,  STR_TO_DATE(%s, '%d/%m/%Y'), %s, %s, %s)"
         val = (datoGara['nomeCognome'], datoGara['data'], datoGara['disciplina'], datoGara['prestazione'], datoGara['societaPrestazione'])
-    mycursor.execute(sql, val)
+    #mycursor.execute(sql, val)
+    print(sql, val)
 
-    conn.commit()
+    #conn.commit()
 
-    print(mycursor.rowcount, "record inserted.")
+   # print(mycursor.rowcount, "record inserted.")
 
 def getLinkAtleti(urlSocieta):
     listAtleti = []
@@ -108,11 +109,21 @@ def getDatiAtleta(urlAtleta):
                 #!print(datoGara)
 
 load_dotenv()
-conn = connect()
+#conn = connect()
 #getDatiAtleta("https://www.fidal.it/atleta/Paolo-Colombo/drKRkpWnaWs%3D")i
-getLinkAtleti("https://www.fidal.it/societa/POL--OLONIA/VA129")
+# Carica i dati delle società dal file JSON
+with open('societa/societa.json', 'r', encoding='utf-8') as json_file:
+    societa_data = json.load(json_file)
+
+for societa in societa_data:
+    # Estrai il link della società
+    link_societa = societa['link']
+    # Esegui la funzione getLinkAtleti per la società
+    link_atleti = getLinkAtleti(link_societa)
+
+#getLinkAtleti("https://www.fidal.it/societa/POL--OLONIA/VA129")
 #*----------link utili----------------------------------
 #atleta senza data nascita: https://www.fidal.it/atleta/Paolo-Colombo/drKRkpWnaWs%3D
 #atleta con data nascita: https://www.fidal.it/atleta/Laura-Cortesi/drKRk5iobmw%3D
 #società: https://www.fidal.it/societa/POL--OLONIA/VA129
-#*-------------------------------------------------------
+#*--------------------------------------------------------=

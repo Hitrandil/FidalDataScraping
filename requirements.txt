@@ -1,5 +1,5 @@
-python-dotenv
-
-bs4
-
-mysql.connector
+beautifulsoup4==4.9.3
+bs4==0.0.1
+mysql-connector-python==8.0.25
+python-dotenv==0.19.0
+requests==2.26.0
